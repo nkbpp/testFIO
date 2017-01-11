@@ -23,15 +23,5 @@ public class Main {
         catch (java.lang.NullPointerException e){
             System.out.println("Такого ФИО в БД нет!!!");
         }
-        //System.out.println(customers.get(s));
-
-//        for(String s : customers.keySet()){
-//            System.out.println(s + " имеет");
-//            for (String t : customers.get(s)){
-//                System.out.println("  " + t);
-//            }
-//        }
-
-        //System.out.println("FIO");
     }
 }
