@@ -15,12 +15,12 @@ public class Main {
             System.out.println("Введите пользователя: ");
             String s = in.nextLine().trim();
 
-            String s1[] = customers.get(s).toArray(new String[customers.get(s).size()]);
+            String s1[] = customers.get(s).toArray(new String[customers.get(s).size()]);//номера телефонов в массив чтобы выводить с циферками
             for (int i = 1; i < s1.length + 1; i++) {
                 System.out.println(i + ". " + s1[i - 1]);
             }
         }
-        catch (java.lang.NullPointerException e){
+        catch (java.lang.NullPointerException e){//если не найдется фамилии или будет отсутствовать номер
             System.out.println("Такого ФИО в БД нет!!!");
         }
     }
